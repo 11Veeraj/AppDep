@@ -35,7 +35,7 @@ def main():
     # Data Analysis Options
     if st.sidebar.checkbox("Show Missing Values"):
         st.subheader("Missing Values")
-        st.pyplot(msno.bar(df))
+        st.write(msno.bar(df))
 
     if st.sidebar.checkbox("Show Data Information"):
         st.subheader("Data Information")
