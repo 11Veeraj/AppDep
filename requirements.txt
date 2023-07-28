@@ -68,7 +68,6 @@ seaborn==0.12.2
 shellingham==1.5.0.post1
 six==1.16.0
 sklearn==0.0.post1
-sklearn.metrics==0.0.1
 smmap==5.0.0
 streamlit==1.25.0
 tenacity==8.1.0
