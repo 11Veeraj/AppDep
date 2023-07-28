@@ -35,7 +35,9 @@ def main():
     # Data Analysis Options
     if st.sidebar.checkbox("Show Missing Values"):
         st.subheader("Missing Values")
-        st.write(msno.bar(df))
+        fig, ax = plt.subplots()  # Create a Matplotlib figure and axis
+        msno.bar(df, ax=ax)  # Plot the missing values bar graph on the axis
+        st.pyplot(fig)  # Display the Matplotlib plot using Streamlit
 
     if st.sidebar.checkbox("Show Data Information"):
         st.subheader("Data Information")
